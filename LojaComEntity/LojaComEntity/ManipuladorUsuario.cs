@@ -32,5 +32,10 @@ namespace LojaComEntity
             contexto.Usuarios.Remove(usuario);
             contexto.SaveChanges();
         }
+
+        public void SaveChanges()
+        {
+            contexto.SaveChanges();
+        }
     }
 }

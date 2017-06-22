@@ -8,9 +8,10 @@ using LojaComEntity;
 namespace LojaComEntity.Migrations
 {
     [DbContext(typeof(ModelContext))]
-    partial class DAOContextModelSnapshot : ModelSnapshot
+    [Migration("20170622165055_CriaProdutoECategoria")]
+    partial class CriaProdutoECategoria
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "7.0.0-rc1-16348")

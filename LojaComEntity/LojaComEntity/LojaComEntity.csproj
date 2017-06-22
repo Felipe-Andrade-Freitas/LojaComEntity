@@ -113,7 +113,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\20170622165055_CriaProdutoECategoria.cs" />
+    <Compile Include="Migrations\20170622165055_CriaProdutoECategoria.designer.cs">
+      <DependentUpon>20170622165055_CriaProdutoECategoria.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelContext.cs" />
+    <Compile Include="Model\Categoria.cs" />
+    <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="LojaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
