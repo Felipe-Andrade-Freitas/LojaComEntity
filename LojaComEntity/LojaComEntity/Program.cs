@@ -14,7 +14,7 @@ namespace LojaComEntity
     {
         static void Main(string[] args)
         {
-            //UsuarioDao dao = new UsuarioDao();
+            UsuarioDao dao = new UsuarioDao();
             ModelContext contexto = new ModelContext();
 
             //Usuario vitor = new Usuario()
@@ -22,7 +22,7 @@ namespace LojaComEntity
             //    Nome = "vitor".ToUpper(),
             //    Senha = "123".ToUpper()
             //};
-            //manipulador.Salva(vitor);
+            //dao.Salva(vitor);
 
             //dao.RemoveUsuario(vitor);
 
@@ -65,15 +65,46 @@ namespace LojaComEntity
 
             Console.WriteLine("====================================================================");
 
-            CategoriaDAO dao = new CategoriaDAO(contexto);
+            CategoriaDAO daoc = new CategoriaDAO(contexto);
+            VendaDAO vendDao = new VendaDAO(contexto);
+            
 
-            var result = dao.BuscaPorNomePrecoCategoria(null, 20, null);
+            var result = daoc.BuscaPorNomePrecoCategoria(null, 20, null);
 
             foreach(var p in result)
             {
                 Console.WriteLine(p.Nome);
             }
+
+            Console.WriteLine("====================================================================");
+
+
+            Usuario was = dao.BuscaPorId(1);
+
+            Venda v = new Venda()
+            {
+                Cliente = was
+            };
+            //vendDao.AdicionaVenda(v);
+
+            ProdutoDAO prod = new ProdutoDAO();
+            Produto p1 = prod.BuscaPorID(1);
+            Produto p2 = prod.BuscaPorID(2);       
+
+            ProdutoVenda prodv = new ProdutoVenda()
+            {
+                Venda =v,
+                Produto = p1
+            };
             
+            ProdutoVenda prodv2 = new ProdutoVenda()
+            {
+                Venda = v,
+                Produto = p2
+            };
+            contexto.ProdutoVenda.Add(prodv2);
+            contexto.ProdutoVenda.Add(prodv);
+
             Console.ReadKey();
         }
     }

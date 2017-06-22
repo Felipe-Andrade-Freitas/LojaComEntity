@@ -118,16 +118,23 @@
     <Compile Include="Migrations\20170622165055_CriaProdutoECategoria.designer.cs">
       <DependentUpon>20170622165055_CriaProdutoECategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170622200007_CriaVenda.cs" />
+    <Compile Include="Migrations\20170622200007_CriaVenda.designer.cs">
+      <DependentUpon>20170622200007_CriaVenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelContext.cs" />
     <Compile Include="Model\Categoria.cs" />
     <Compile Include="Model\Produto.cs" />
+    <Compile Include="Model\ProdutoVenda.cs" />
     <Compile Include="Model\Usuario.cs" />
     <Compile Include="LojaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LojaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Model\Venda.cs" />
     <Compile Include="ProdutoDAO.cs" />
+    <Compile Include="ProdutoVendaDAO.cs" />
     <Compile Include="UsuarioDAO.cs" />
     <Compile Include="Migrations\20170622131810_criaUsuario.cs" />
     <Compile Include="Migrations\20170622131810_criaUsuario.designer.cs">
@@ -141,6 +148,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="VendaDAO.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
