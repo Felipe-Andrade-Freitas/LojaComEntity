@@ -113,13 +113,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAOContext.cs" />
-    <Compile Include="DAO\Usuario.cs" />
+    <Compile Include="ModelContext.cs" />
+    <Compile Include="Model\Usuario.cs" />
     <Compile Include="LojaDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LojaDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ManipuladorUsuario.cs" />
     <Compile Include="Migrations\20170622131810_criaUsuario.cs" />
     <Compile Include="Migrations\20170622131810_criaUsuario.designer.cs">
       <DependentUpon>20170622131810_criaUsuario.cs</DependentUpon>

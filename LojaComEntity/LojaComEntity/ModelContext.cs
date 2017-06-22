@@ -1,4 +1,4 @@
-﻿using LojaComEntity.DAO;
+﻿using LojaComEntity.Model;
 using Microsoft.Data.Entity;
 using System.Configuration;
 using System.Linq;
@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LojaComEntity
 {
-    public class DAOContext : DbContext
+    public class ModelContext : DbContext
     {
         public DbSet<Usuario> Usuarios { get; set; }
 

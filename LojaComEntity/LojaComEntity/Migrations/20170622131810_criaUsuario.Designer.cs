@@ -7,7 +7,7 @@ using LojaComEntity;
 
 namespace LojaComEntity.Migrations
 {
-    [DbContext(typeof(DAOContext))]
+    [DbContext(typeof(ModelContext))]
     [Migration("20170622131810_criaUsuario")]
     partial class criaUsuario
     {

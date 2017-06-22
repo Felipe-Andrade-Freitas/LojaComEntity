@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LojaComEntity.DAO
+namespace LojaComEntity.Model
 {
     public class Usuario
     {

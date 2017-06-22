@@ -7,7 +7,7 @@ using LojaComEntity;
 
 namespace LojaComEntity.Migrations
 {
-    [DbContext(typeof(DAOContext))]
+    [DbContext(typeof(ModelContext))]
     partial class DAOContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
