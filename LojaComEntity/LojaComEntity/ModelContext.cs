@@ -28,7 +28,7 @@ namespace LojaComEntity
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ProdutoVenda>().HasKey(pv => new { pv.VendaID, pv.ProdutoID});
+            modelBuilder.Entity<ProdutoVenda>().HasKey(pv => new { pv.VendaId, pv.ProdutoID});
             base.OnModelCreating(modelBuilder);
         }
     }

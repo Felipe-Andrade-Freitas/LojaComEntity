@@ -12,7 +12,7 @@ namespace LojaComEntity.Model
 
         public virtual Produto Produto {get; set; }
 
-        public int VendaID { get; set; }
+        public int VendaId { get; set; }
 
         public virtual Venda Venda { get; set; }
     }

@@ -21,5 +21,14 @@ namespace LojaComEntity
             contexto.Add(Venda);
             contexto.SaveChanges();
         }
+
+        public Venda AdicionaUsuarioAVenda(Usuario usuario)
+        {
+            Venda venda = new Venda()
+            {
+                Cliente = usuario
+            };
+            return venda;
+        }
     }
 }
