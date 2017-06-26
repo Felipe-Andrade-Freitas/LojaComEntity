@@ -104,6 +104,19 @@ namespace LojaComEntity
                     Console.WriteLine(prove.Produto.Nome);
                 }
 
+                Console.WriteLine("====================================================================");
+
+                PessoaFisicaDAO PF = new PessoaFisicaDAO(contexto);
+                PessoaJuridicaDAO PJ = new PessoaJuridicaDAO(contexto);
+                var PF1 = new PessoaFisica();
+                PF1.CPF = "023685965";
+                PF1.Nome = "José Silva";
+                PF1.Senha = "123";
+                
+                PF.AdicionaESalvaPF(PF1);
+                PJ.AdicionaESalvaPJ("XSD LTDA", "123698542/25", "123");
+
+                Console.WriteLine("A pessoa física {0} foi salva", PF1.Nome);
                 Console.ReadKey();
             }
 

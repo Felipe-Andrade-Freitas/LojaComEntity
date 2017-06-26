@@ -124,6 +124,8 @@
     </Compile>
     <Compile Include="ModelContext.cs" />
     <Compile Include="Model\Categoria.cs" />
+    <Compile Include="Model\PessoaFisica.cs" />
+    <Compile Include="Model\PessoaJuridica.cs" />
     <Compile Include="Model\Produto.cs" />
     <Compile Include="Model\ProdutoVenda.cs" />
     <Compile Include="Model\Usuario.cs" />
@@ -133,6 +135,8 @@
       <DependentUpon>LojaDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Model\Venda.cs" />
+    <Compile Include="PessoaFisicaDAO.cs" />
+    <Compile Include="PessoaJuridicaDAO.cs" />
     <Compile Include="ProdutoDAO.cs" />
     <Compile Include="ProdutoVendaDAO.cs" />
     <Compile Include="UsuarioDAO.cs" />

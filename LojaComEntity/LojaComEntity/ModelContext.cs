@@ -1,12 +1,13 @@
 ﻿using LojaComEntity.Model;
 using Microsoft.Data.Entity;
 using System.Configuration;
+//using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace LojaComEntity
 {
-    public class ModelContext : DbContext
+    public class ModelContext : Microsoft.Data.Entity.DbContext
     {
         public DbSet<Usuario> Usuarios { get; set; }
 
@@ -17,6 +18,10 @@ namespace LojaComEntity
         public DbSet<Venda> Vendas { get; set; }
 
         public DbSet<ProdutoVenda> ProdutoVenda { get; set; }
+
+        public DbSet<PessoaFisica> PessoaFisica { get; set; }
+
+        public DbSet<PessoaJuridica> PessoaJuridica { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

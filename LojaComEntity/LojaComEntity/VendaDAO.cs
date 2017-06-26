@@ -19,7 +19,7 @@ namespace LojaComEntity
         public void AdicionaVenda(Venda Venda)
         {
             contexto.Vendas.Add(Venda);
-            contexto.Vendas.SaveChanges();
+            contexto.SaveChanges();
         }
 
         public Venda AdicionaUsuarioAVenda(Usuario usuario)
