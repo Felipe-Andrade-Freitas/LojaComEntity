@@ -19,7 +19,7 @@ namespace LojaComEntity
         public void Salva(Usuario usuario)
         {
             contexto.Usuarios.Add(usuario);
-            contexto.SaveChanges();
+            contexto.Usuarios.SaveChanges();
         }
 
         public Usuario BuscaPorId(int id)
@@ -30,12 +30,12 @@ namespace LojaComEntity
         public void RemoveUsuario(Usuario usuario)
         {
             contexto.Usuarios.Remove(usuario);
-            contexto.SaveChanges();
+            contexto.Usuarios.SaveChanges();
         }
 
         public void SaveChanges()
         {
-            contexto.SaveChanges();
+            contexto.Usuarios.SaveChanges();
         }
     }
 }

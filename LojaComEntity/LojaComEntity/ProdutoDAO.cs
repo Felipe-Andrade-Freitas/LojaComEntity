@@ -24,12 +24,12 @@ namespace LojaComEntity
         public void AdicionaProduto(Produto produto)
         {
             contexto.Produtos.Add(produto);
-            contexto.SaveChanges();
+            contexto.Produtos.SaveChanges();
         }
 
         public void SaveChanges()
         {
-            contexto.SaveChanges();
+            contexto.Produtos.SaveChanges();
         }
 
         public void RemoveProduto(Produto produto)
@@ -40,7 +40,7 @@ namespace LojaComEntity
         public void AlteraCategoriaDeProd(Produto produto, Categoria categoria)
         {
             produto.Categoria.ID = categoria.ID;
-            contexto.SaveChanges();
+            contexto.Produtos.SaveChanges();
         }
     }
 }
